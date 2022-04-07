@@ -42,6 +42,16 @@
 \restylefloat{table}
 
 \journal{SoftwareX}
+\usepackage{academicons}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{idcolor}{HTML}{A6CE39}
+\newcommand{\orcid}[1]{\hspace*{0.1em}\href{https://orcid.org/#1}{\color{idcolor}\aiOrcid}}
+
+
+
+
 
 \begin{document}
 
@@ -67,26 +77,32 @@
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
-\title{Title/Name of your software}
+\title{T3: A R package for processing tropical tuna fisheries data}
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{}
 %% \address[label1]{}
 %% \address[label2]{}
+\author[ob7,marbec]{Mathieu Depetris}
+\author[ob7,marbec]{\orcid{0000-0001-6135-9015}Antoine Duparc}
+\author[ob7,marbec]{Pascal Cauquil}
+\author[ob7,marbec]{Laurent Floc'h}
+\author[ob7,marbec]{\orcid{0000-0002-7759-0534}Julien Lebranchu}
 
-\author{A. Author}
+\address[ob7]{\orcid{0000-0002-4642-3418}OB7, IRD, Sète, France.}
+\address[marbec]{MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Montpellier, France.}
 
-\address{Your institute, some address}
 
 \begin{abstract}
 %% Text of abstract 
-Ca. 100 words
-
+%% Ca. 100 words
+The multi-species nature of tropical tuna surface fisheries gives rise to a series of difficulties when estimating the catch by species and catch at size statistics.
+The T3 processing was built about 30 years ago in order to correct biases of the logbook data on species composition and to provide more accurate catch estimates per species for the purse seine fleet, specialy European and Seychelles fleet.
 \end{abstract}
 
 \begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
-keyword 1 \sep keyword 2 \sep keyword 3
+TUna \sep Species composition \sep surface fisheries \sep Open source software \sep R
 
 %% PACS codes here, in the form: \PACS code \sep code
 
@@ -110,21 +126,21 @@ Ancillary data table required for subversion of the codebase. Kindly replace exa
 \hline
 \textbf{Nr.} & \textbf{Code metadata description} & \textbf{Please fill in this column} \\
 \hline
-C1 & Current code version & For example v42 \\
+C1 & Current code version & v1.0.0 \\
 \hline
-C2 & Permanent link to code/repository used for this code version & For example: $https://github.com/mozart/mozart2$ \\
+C2 & Permanent link to code/repository used for this code version &$https://github.com/OB7-IRD/t3$ \\
 \hline
-C3 & Code Ocean compute capsule & For example: $https://codeocean.com/2017/07/30/neurospeech-colon-an-open-source-software-for-parkinson-apos-s-speech-analysis/code$\\
+C3 & Code Ocean compute capsule & \\
 \hline
-C4 & Legal Code License   & List one of the approved licenses \\
+C4 & Legal Code License   & GNU General Public License v3.0 \\
 \hline
-C5 & Code versioning system used & For example svn, git, mercurial, etc. put none if none \\
+C5 & Code versioning system used & git \\
 \hline
-C6 & Software code languages, tools, and services used & For example C++, python, r, MPI, OpenCL, etc. \\
+C6 & Software code languages, tools, and services used & r \footnote{Mettre CSV, postgresSQL , ms access ?}\\
 \hline
-C7 & Compilation requirements, operating environments \& dependencies & \\
+C7 & Compilation requirements, operating environments \& dependencies & A REMPLIR\\
 \hline
-C8 & If available Link to developer documentation/manual & For example: $http://mozart.github.io/documentation/$ \\
+C8 & If available Link to developer documentation/manual & For example: $http://ob7-ird.github.io/t3/$ \\
 \hline
 C9 & Support email for questions & \\
 \hline
@@ -211,14 +227,7 @@ Indicate in what way the software is used in commercial settings and/or how it l
 Set out the conclusion of this original software publication.
 
 \section{Conflict of Interest}
-Please select the appropriate text:
-
-Potential conflict of interest exists:
-We wish to draw the attention of the Editor to the following facts, which may be considered as potential conflicts of interest, and to significant financial contributions to this work. The nature of potential conflict of interest is described below: [Describe conflict of interest]
-
-No conflict of interest exists:
 We wish to confirm that there are no known conflicts of interest associated with this publication and there has been no significant financial support for this work that could have influenced its outcome.
-
 
 \section*{Acknowledgements}
 \label{}
