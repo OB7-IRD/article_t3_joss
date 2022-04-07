@@ -49,7 +49,7 @@
 \definecolor{idcolor}{HTML}{A6CE39}
 \newcommand{\orcid}[1]{\hspace*{0.1em}\href{https://orcid.org/#1}{\color{idcolor}\aiOrcid}}
 
-
+\usepackage{citeall}
 
 
 
@@ -130,19 +130,19 @@ C1 & Current code version & v1.0.0 \\
 \hline
 C2 & Permanent link to code/repository used for this code version &$https://github.com/OB7-IRD/t3$ \\
 \hline
-C3 & Code Ocean compute capsule & \\
+C3 & Code Ocean compute capsule & none\\
 \hline
 C4 & Legal Code License   & GNU General Public License v3.0 \\
 \hline
 C5 & Code versioning system used & git \\
 \hline
-C6 & Software code languages, tools, and services used & r \footnote{Mettre CSV, postgresSQL , ms access ?}\\
+C6 & Software code languages, tools, and services used & R v4.1\\
 \hline
 C7 & Compilation requirements, operating environments \& dependencies & A REMPLIR\\
 \hline
-C8 & If available Link to developer documentation/manual & For example: $http://ob7-ird.github.io/t3/$ \\
+C8 & If available Link to developer documentation/manual & $http://ob7-ird.github.io/t3/$ \\
 \hline
-C9 & Support email for questions & \\
+C9 & Support email for questions & mathieu.depetris@ird.fr\\
 \hline
 \end{tabular}
 \caption{Code metadata (mandatory)}
@@ -245,22 +245,15 @@ Optionally thank people and institutes you need to acknowledge.
 %% If you have bibdatabase file and want bibtex to generate the
 %% bibitems, please use
 %%
-%%  \bibliographystyle{elsarticle-num} 
-%%  \bibliography{<your bibdatabase>}
-
-%% else use the following coding to input the bibitems directly in the
-%% TeX file.
-
-\begin{thebibliography}{00}
 
 
-%% \bibitem{label}
-%% Text of bibliographic item
+\cite{depetris_mathieu_2022_3878124}
+\cite{2018_r_core_team}
 
-\bibitem{}
 
-\end{thebibliography}
-Please add the reference to the software repository if DOI for software  is available. 
+\bibliographystyle{elsarticle-num} 
+\bibliography{articles_t3}
+
 
 \section*{Current executable software version}
 \label{}
