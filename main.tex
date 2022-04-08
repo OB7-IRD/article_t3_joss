@@ -51,6 +51,16 @@
 
 \usepackage{citeall}
 
+
+% Select what to do with todonotes: 
+% \usepackage[disable]{todonotes} % notes not showed
+\usepackage[draft]{todonotes}   % notes showed
+
+% Select what to do with command \comment:  
+% \newcommand{\comment}[1]{}  %comment not showed
+\newcommand{\comment}[1]
+{\par {\bfseries \color{blue} #1 \par}} %comment showed
+
 \begin{document}
 
 \begin{frontmatter}
@@ -136,7 +146,7 @@ C5 & Code versioning system used & git \\
 \hline
 C6 & Software code languages, tools, and services used & R v4.1\\
 \hline
-C7 & Compilation requirements, operating environments \& dependencies & A REMPLIR\\
+C7 & Compilation requirements, operating environments \& dependencies & \todo[inline]{A REMPLIR}\\
 \hline
 C8 & If available Link to developer documentation/manual & \url{http://ob7-ird.github.io/t3/}\\
 \hline
@@ -232,7 +242,12 @@ We wish to confirm that there are no known conflicts of interest associated with
 
 Optionally thank people and institutes you need to acknowledge. 
 
-Lister les cont
+\comment{
+    \begin{itemize}
+    \item Lister les contributeurs
+    \item Lister les financeurs (IRD et EUMAP) 
+    \end{itemize}
+} 
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
