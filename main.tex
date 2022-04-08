@@ -51,8 +51,6 @@
 
 \usepackage{citeall}
 
-
-
 \begin{document}
 
 \begin{frontmatter}
@@ -70,10 +68,7 @@
 %% \title{Title\tnoteref{label1}}
 %% \tnotetext[label1]{}
 %% \author{Name\corref{cor1}\fnref{label2}}
-%% \ead{email address}
-%% \ead[url]{home page}
-%% \fntext[label2]{}
-%% \cortext[cor1]{}
+%% \fntext[label2]{BB}
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
@@ -83,15 +78,18 @@
 %% \author[label1,label2]{}
 %% \address[label1]{}
 %% \address[label2]{}
-\author[ob7,marbec]{Mathieu Depetris}
+\author[ob7,marbec]{Mathieu Depetris\corref{cor1}}
+
 \author[ob7,marbec]{\orcid{0000-0001-6135-9015}Antoine Duparc}
 \author[ob7,marbec]{Pascal Cauquil}
 \author[ob7,marbec]{Laurent Floc'h}
 \author[ob7,marbec]{\orcid{0000-0002-7759-0534}Julien Lebranchu}
 
+
 \address[ob7]{\orcid{0000-0002-4642-3418}OB7, IRD, Sète, France.}
 \address[marbec]{MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Montpellier, France.}
 
+\cortext[cor1]{Corresponding author's email : mathieu.depetris@ird.fr, ob7@ird.fr}
 
 \begin{abstract}
 %% Text of abstract 
@@ -102,7 +100,7 @@ The T3 processing was built about 30 years ago in order to correct biases of the
 
 \begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
-TUna \sep Species composition \sep surface fisheries \sep Open source software \sep R
+Tuna \sep Species composition \sep surface fisheries \sep Open source software \sep R
 
 %% PACS codes here, in the form: \PACS code \sep code
 
@@ -128,7 +126,7 @@ Ancillary data table required for subversion of the codebase. Kindly replace exa
 \hline
 C1 & Current code version & v1.0.0 \\
 \hline
-C2 & Permanent link to code/repository used for this code version &$https://github.com/OB7-IRD/t3$ \\
+C2 & Permanent link to code/repository used for this code version &\url{https://github.com/OB7-IRD/t3} \\
 \hline
 C3 & Code Ocean compute capsule & none\\
 \hline
@@ -140,7 +138,7 @@ C6 & Software code languages, tools, and services used & R v4.1\\
 \hline
 C7 & Compilation requirements, operating environments \& dependencies & A REMPLIR\\
 \hline
-C8 & If available Link to developer documentation/manual & $http://ob7-ird.github.io/t3/$ \\
+C8 & If available Link to developer documentation/manual & \url{http://ob7-ird.github.io/t3/}\\
 \hline
 C9 & Support email for questions & mathieu.depetris@ird.fr\\
 \hline
@@ -234,6 +232,8 @@ We wish to confirm that there are no known conflicts of interest associated with
 
 Optionally thank people and institutes you need to acknowledge. 
 
+Lister les cont
+
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
 %% \appendix
@@ -269,9 +269,9 @@ S1 & Current software version & For example 1.1, 2.4 etc. \\
 \hline
 S2 & Permanent link to executables of this version  & For example: $https://github.com/combogenomics/$ $DuctApe/releases/tag/DuctApe-0.16.4$ \\
 \hline
-S3 & Legal Software License & List one of the approved licenses \\
+S3 & Legal Software License & GNU  \\
 \hline
-S4 & Computing platforms/Operating Systems & For example Android, BSD, iOS, Linux, OS X, Microsoft Windows, Unix-like , IBM z/OS, distributed/web based etc. \\
+S4 & Computing platforms/Operating Systems & Linux, OS X, Microsoft Windows \\
 \hline
 S5 & Installation requirements \& dependencies & \\
 \hline
