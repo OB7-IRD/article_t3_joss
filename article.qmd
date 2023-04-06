@@ -1,0 +1,60 @@
+---
+title: 'T3: A R package for processing tropical tuna fisheries
+data'
+tags:
+  - Tuna
+  - Species composition
+  - surface fisheries
+  - Open source software
+  - R
+authors:
+  - name: Mathieu Depetris
+    orcid: 0000-0001-8080-0531
+    equal-contrib: true
+    corresponding: true 
+    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+  - name: Antoine Duparc
+    orcid: 0000-0002-3919-8208
+    equal-contrib: true
+    corresponding: false 
+    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+  - name: Pascal Cauquil
+    orcid: 0000-0003-0718-8950
+    equal-contrib: true
+    corresponding: false 
+    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+  - name: Laurent Floc'h
+    orcid: 0000-0003-4764-9766
+    equal-contrib: true
+    corresponding: false 
+    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+  - name: Julien Lebranchu
+    orcid: 0000-0002-7759-0534
+    equal-contrib: true
+    corresponding: false
+    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+affiliations:
+ - name: OB7, IRD, Sète, France
+   index: 1
+ - name: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Montpellier, France
+   index: 2
+#date: 13 August 2017
+bibliography: bibliography.bib
+# Optional fields if submitting to a AAS journal too, see this blog post:
+# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
+aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
+aas-journal: Astrophysical Journal <- The name of the AAS journal.
+format: pdf
+---
+
+# Summary
+
+The multi-species nature of tropical tuna surface fisheries gives rise to a series of difficulties when estimating the catch by species and catch at size statistics.
+The T3 processing was built about 30 years ago in order to correct biases of the logbook data on species composition and to provide more accurate catch estimates per species for the purse seine fleet, specialy European and Seychelles fleet.
+
+
+# Acknowledgements
+
+
+
+# References
