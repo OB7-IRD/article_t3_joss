@@ -52,8 +52,11 @@ The multi-species nature of tropical tuna surface fisheries gives rise to a seri
 The T3 processing was built about 30 years ago in order to correct biases of the logbook data on species composition and to provide more accurate catch estimates per species for the purse seine fleet, specialy European and Seychelles fleet.
 
 
-# Acknowledgements
+# Citations
 
+@2018_r_core_team @depetris_mathieu_2022_3878124
+
+# Acknowledgements
 
 
 # References
