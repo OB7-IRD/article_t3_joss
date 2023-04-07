@@ -1,1 +1,5 @@
 .DS_Store
+article.html
+.gitignore
+article_files/**
+article.pdf
