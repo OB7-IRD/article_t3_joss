@@ -21,3 +21,10 @@ jobs:
           # PDF. Note, this should be the same directory as the input
           # paper.md
           path: article.pdf
+      - name: Download
+        uses: actions/download-artifact@v3
+        with:
+          name: article
+          path: article.pdf
+    
+          
