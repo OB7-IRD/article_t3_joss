@@ -1,6 +1,5 @@
 ---
-title: 'T3: A R package for processing tropical tuna fisheries
-data'
+title: 'T3: A R package for processing tropical tuna fisheries data'
 tags:
   - Tuna
   - Species composition
