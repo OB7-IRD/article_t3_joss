@@ -7,6 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - run: mkdir -p joss  
       - name: Build draft PDF
         uses: openjournals/openjournals-draft-action@master
         with:
@@ -14,17 +15,17 @@ jobs:
           # This should be the path to the paper within your repo.
           paper-path: article.qmd
       - name: Upload
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: article
           # This is the output path where Pandoc will write the compiled
           # PDF. Note, this should be the same directory as the input
           # paper.md
-          path: article.pdf
+          path: joss/article.pdf
       - name: Download
         uses: actions/download-artifact@v3
         with:
           name: article
-          path: article-joss.pdf
+          path: joss/article.pdf
     
           
