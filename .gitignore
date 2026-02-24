@@ -3,3 +3,4 @@ article.html
 .gitignore
 article_files/**
 article.pdf
+.Rproj.user

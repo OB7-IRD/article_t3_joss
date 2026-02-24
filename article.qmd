@@ -48,15 +48,59 @@ format: pdf
 
 # Summary
 
-The multi-species nature of tropical tuna surface fisheries gives rise to a series of difficulties when estimating the catch by species and catch at size statistics.
-The T3 processing was built about 30 years ago in order to correct biases of the logbook data on species composition and to provide more accurate catch estimates per species for the purse seine fleet, specialy European and Seychelles fleet.
+The multi-species nature of tropical tuna surface fisheries gives rise to a series of difficulties when estimating the catch by species and catch at size statistics. 
+The T3 processing was built about 30 years ago in order to correct biases of the logbook data on species composition and to provide more accurate catch estimates per species for the purse seine fleet, mainly for European and Seychelles fleet.
 
+# Statement of need
 
-# Citations
+European and Seychelles (+ ghana...) scientists need common database design and software for tropical tuna treatment => AVDTH DB and T3 FORTRAN implementation but issue :
 
-@2018_r_core_team @depetris_mathieu_2022_3878124
+* AVDTH DB are local and not shared between fleets, more difficult to manage
+
+* AVDTH DH schema don't handle fish aggregating (or aggregation) device (FAD) description, so the DB used needed to evolve and has been replaced by Observe DB in ? recording more detailed data. 
+
+* Translation of T3 FORTRAN in R [@2018_r_core_team] as t3 R package for Tropical Tuna Treatment. @depetris_mathieu_2022_3878124
+
+# State of the field
+
+Then the t3 R package has known a lot of improvement as 
+
+* the addition of level 3 : species composition correction according to sampling at landing
+* documentation
+
+# Software design
+
+design philosophy is based on three core principles: (1) to provide a
+user-friendly, modular, object-oriented functions, (2) to use community tools and
+standards, (3)
+
+* Model initialization
+
+* Level 1 : logbooks standardization
+
+* Level 2 : samples standardization
+
+* Level 3 : estimation of major tuna species composition 
+
+outputs in .csv 
+R6 objects
+dplyr for aggregation 
+
+# Research impact statement 
+
+This software and its results is now used by:
+
+* Spanish scientists (IEO)
+* Seychelles scientists (SFA)
+* French scientists (OB7 + David Kaplan + ...)
+* ...
+
+to fill IOTC and ICAT required forms for stock assessment and control of quotas
+# AI usage disclosure
+
+No generative AI tools were used in the development of this software, the writing
+of this manuscript, or the preparation of supporting materials.
 
 # Acknowledgements
-
 
 # References
