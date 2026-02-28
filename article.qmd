@@ -1,5 +1,5 @@
 ---
-title: 'T3: A R package for processing tropical tuna fisheries data'
+title: 'T3: R package for Tropical Tuna fisheries data Treatment'
 tags:
   - Tuna
   - Species composition
@@ -7,6 +7,12 @@ tags:
   - Open source software
   - R
 authors:
+  - name: Jeanne Clément
+    email: jeanne.clement@ird.fr
+    orcid: 0000-0002-5228-5015
+    equal-contrib: true
+    corresponding: true 
+    affiliation: "1, 2" # (Multiple affiliations must be quoted)
   - name: Mathieu Depetris
     orcid: 0000-0001-8080-0531
     equal-contrib: true
@@ -49,7 +55,8 @@ format: pdf
 # Summary
 
 The multi-species nature of tropical tuna surface fisheries gives rise to a series of difficulties when estimating the catch by species and catch at size statistics. 
-The T3 processing was built about 30 years ago in order to correct biases of the logbook data on species composition and to provide more accurate catch estimates per species for the purse seine fleet, mainly for European and Seychelles fleet.
+The T3 processing was built about 30 years ago for processing tropical tuna fisheries data, in order to correct biases of the logbook data on species composition and to provide more accurate catch estimates per species for the purse seine fleet, mainly for European and Seychelles fleet.
+
 
 # Statement of need
 
@@ -57,7 +64,7 @@ European and Seychelles (+ ghana...) scientists need common database design and 
 
 * AVDTH DB are local and not shared between fleets, more difficult to manage
 
-* AVDTH DH schema don't handle fish aggregating (or aggregation) device (FAD) description, so the DB used needed to evolve and has been replaced by Observe DB in ? recording more detailed data. 
+* AVDTH DB schemas don't handle Fish Aggregating Device (FAD) description, so the DB used needed to evolve and has been replaced by Observe DB to record more detailed data. 
 
 * Translation of T3 FORTRAN in R [@2018_r_core_team] as t3 R package for Tropical Tuna Treatment. @depetris_mathieu_2022_3878124
 
